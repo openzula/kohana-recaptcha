@@ -53,7 +53,11 @@ class Oz_Recaptcha {
 	 */
 	public function get_html()
 	{
-		return recaptcha_get_html($this->_public_key, $this->_error);
+		return recaptcha_get_html(
+			$this->_public_key,
+			$this->_error,
+			(Request::$initial->protocol() === 'https')
+		);
 	}
 
 	/**
