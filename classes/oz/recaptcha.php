@@ -4,7 +4,8 @@
  *
  * @package openzula/kohana-recaptcha
  * @author Alex Cartwright <alex@openzula.org>
- * @copyright Copyright (C) 2011 Alex Cartwright
+ * @copyright Copyright (c) 2011, OpenZula
+ * @license http://openzula.org/license-bsd-3c BSD 3-Clause License
  */
 
 class Oz_Recaptcha {
