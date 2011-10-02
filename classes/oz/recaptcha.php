@@ -43,8 +43,8 @@ class Oz_Recaptcha {
 		{
 			$config = Kohana::$config->load('recaptcha');
 		}
-		$this->_public_key = $config['public_key'];
-		$this->_private_key = $config['private_key'];
+		$this->_public_key = $config->get('public_key');
+		$this->_private_key = $config->get('private_key');
 	}
 
 	/**
