@@ -2,12 +2,11 @@
 /**
  * Simple wrapper for Googles reCAPTCHA library
  *
- * @package openzula/kohana-recaptcha
- * @author Alex Cartwright <alex@openzula.org>
- * @copyright Copyright (c) 2011, OpenZula
- * @license http://openzula.org/license-bsd-3c BSD 3-Clause License
+ * @package    openzula/kohana-recaptcha
+ * @author     Alex Cartwright <alex@openzula.org>
+ * @copyright  Copyright (c) 2011, OpenZula
+ * @license    http://openzula.org/license-bsd-3c BSD 3-Clause License
  */
-
 class Oz_Recaptcha {
 
 	/**
@@ -32,10 +31,10 @@ class Oz_Recaptcha {
 	 * Load the reCAPTCHA PHP library and configure the keys from the config
 	 * file or the provided array argument.
 	 *
-	 * @param array $config
-	 * @return object
+	 * @param   array  $config
+	 * @return  object
 	 */
-	public function __construct(array $config=NULL)
+	public function __construct(array $config = NULL)
 	{
 		require_once Kohana::find_file('vendor', 'recaptcha/recaptchalib');
 
@@ -50,7 +49,7 @@ class Oz_Recaptcha {
 	/**
 	 * Generate the HTML to display to the client
 	 *
-	 * @return string
+	 * @return  string
 	 */
 	public function get_html()
 	{
@@ -64,11 +63,11 @@ class Oz_Recaptcha {
 	/**
 	 * Returns bool true if successful, bool false if not.
 	 *
-	 * @param string $challenge
-	 * @param string $response
-	 * @return bool
+	 * @param   string  $challenge
+	 * @param   string  $response
+	 * @return  bool
 	 */
-	public function check($challenge=NULL, $response=NULL)
+	public function check($challenge = NULL, $response = NULL)
 	{
 		if (NULL === $challenge)
 		{
