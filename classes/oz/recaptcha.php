@@ -71,11 +71,11 @@ class Oz_Recaptcha {
 	{
 		if (NULL === $challenge)
 		{
-			$challenge = Arr::get($_POST, 'recaptcha_challenge_field', FALSE);
+			$challenge = Request::$current->post('recaptcha_challenge_field') OR FALSE;
 		}
 		if (NULL === $response)
 		{
-			$response = Arr::get($_POST, 'recaptcha_response_field', FALSE);
+			$response = Request::$current->post('recaptcha_response_field') OR FALSE;
 		}
 		$result = recaptcha_check_answer($this->_private_key, Request::$client_ip, $challenge, $response);
 		$this->_error = $result->error;
