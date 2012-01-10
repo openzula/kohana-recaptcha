@@ -2,10 +2,9 @@
 /**
  * Simple wrapper for Googles reCAPTCHA library
  *
- * @package    openzula/kohana-recaptcha
- * @author     Alex Cartwright <alex@openzula.org>
- * @copyright  Copyright (c) 2011, OpenZula
- * @license    http://openzula.org/license-bsd-3c BSD 3-Clause License
+ * @author     Alex Cartwright <alexc223@gmail.com>
+ * @copyright  Copyright (c) 2012 Alex Cartwright
+ * @license    BSD 3-Clause License, see LICENSE file
  */
 class Oz_Recaptcha {
 
