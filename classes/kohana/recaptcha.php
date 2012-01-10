@@ -6,7 +6,7 @@
  * @copyright  Copyright (c) 2012 Alex Cartwright
  * @license    BSD 3-Clause License, see LICENSE file
  */
-class Oz_Recaptcha {
+class Kohana_Recaptcha {
 
 	/**
 	 * Public key
