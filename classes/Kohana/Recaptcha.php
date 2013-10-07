@@ -55,7 +55,7 @@ class Kohana_Recaptcha {
 		return recaptcha_get_html(
 			$this->_public_key,
 			$this->_error,
-			(Request::$initial->protocol() === 'https')
+			Request::$initial->secure()
 		);
 	}
 
